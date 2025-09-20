@@ -5,14 +5,14 @@ const produtos = [
     id: 1,
     nome: "Bolo de Chocolate com Morangos",
     descricao: "morango recheio de brigadeiro e prestígio ",
-    imagem: "./Imagens/Bolos/Bolo-chocolate-grande.jpeg",
+    imagem: "../Imagens/Bolos/Bolo-chocolate-grande.jpeg",
     categoria: "Bolos"
   },
   {
     id: 2,
     nome: "Bolo de Chocolate Decorado",
     descricao: "recheio de brigadeiro ",
-    imagem: "./Imagens/Imagens/Bolos/Bolo-chocolate-lado.jpeg",
+    imagem: "../Imagens/Imagens/Bolos/Bolo-chocolate-lado.jpeg",
     imagemExtra: "../LojaAtulizado/Imagens/Bolos/Boloco-chocolate-vertical.jpeg",
     categoria: "Bolos"
   },
@@ -195,3 +195,4 @@ document.getElementById("filtro-categoria").addEventListener("change", e => {
 document.getElementById("busca-produto").addEventListener("input", e => {
   renderizarProdutos(document.getElementById("filtro-categoria").value, e.target.value);
 });
+
