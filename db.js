@@ -34,7 +34,7 @@ const produtos = [
     id: 5,
     nome: "Bolo de Aniversário",
     descricao: "Personalizado com tema infantil,  massa de chocolate recheio de brigadeiro de maracujá ",
-    imagem: ".Imagens/Bolos/Bolo-Aniversario.jpeg",
+    imagem: "../LojaCorrigido/Bolos/Bolo-Aniversario.jpeg",
     categoria: "Bolos"
   },
 
@@ -195,6 +195,7 @@ document.getElementById("filtro-categoria").addEventListener("change", e => {
 document.getElementById("busca-produto").addEventListener("input", e => {
   renderizarProdutos(document.getElementById("filtro-categoria").value, e.target.value);
 });
+
 
 
 
