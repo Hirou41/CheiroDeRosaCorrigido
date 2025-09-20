@@ -12,29 +12,29 @@ const produtos = [
     id: 2,
     nome: "Bolo de Chocolate Decorado",
     descricao: "recheio de brigadeiro ",
-    imagem: "../Imagens/Imagens/Bolos/Bolo-chocolate-lado.jpeg",
-    imagemExtra: "../Imagens/Bolos/Boloco-chocolate-vertical.jpeg",
+    imagem: "./Imagens/Imagens/Bolos/Bolo-chocolate-lado.jpeg",
+    imagemExtra: "../LojaAtulizado/Imagens/Bolos/Boloco-chocolate-vertical.jpeg",
     categoria: "Bolos"
   },
   {
     id: 3,
     nome: "Bolo no Pote",
     descricao: "porção individual para aniversário e lembrancinha, recheios de brigadeiro branco ",
-    imagem: "../Imagens/Bolos/Bolo-pote-quadrado.jpeg",
+    imagem: "./Imagens/Bolos/Bolo-pote-quadrado.jpeg",
     categoria: "Bolos"
   },
   {
     id: 4,
     nome: "Bolo Rústico com Flores",
     descricao: "rústico com flores recheio de brigadeiro de maracujá ",
-    imagem: "../Imagens/Bolos/Bolo-pote-redondo.jpeg",
+    imagem: "./Imagens/Bolos/Bolo-pote-redondo.jpeg",
     categoria: "Bolos"
   },
   {
     id: 5,
     nome: "Bolo de Aniversário",
     descricao: "Personalizado com tema infantil,  massa de chocolate recheio de brigadeiro de maracujá ",
-    imagem: "/Imagens/Bolos/Bolo-Aniversario.jpeg",
+    imagem: ".Imagens/Bolos/Bolo-Aniversario.jpeg",
     categoria: "Bolos"
   },
 
@@ -195,6 +195,7 @@ document.getElementById("filtro-categoria").addEventListener("change", e => {
 document.getElementById("busca-produto").addEventListener("input", e => {
   renderizarProdutos(document.getElementById("filtro-categoria").value, e.target.value);
 });
+
 
 
 
