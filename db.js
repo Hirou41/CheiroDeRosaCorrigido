@@ -60,7 +60,7 @@ const produtos = [
 ];
 
 // Imagem padrão para brigadeiros sem foto
-const IMAGEM_PADRAO = "./Imagens/Bolos/Caixa-brigadeiro.jpeg";
+const IMAGEM_PADRAO = "../Imagens/Bolos/Caixa-brigadeiro.jpeg";
 
 // Função para renderizar produtos filtrados
 function renderizarProdutos(filtro = "Todos", busca = "") {
@@ -195,6 +195,7 @@ document.getElementById("filtro-categoria").addEventListener("change", e => {
 document.getElementById("busca-produto").addEventListener("input", e => {
   renderizarProdutos(document.getElementById("filtro-categoria").value, e.target.value);
 });
+
 
 
 
