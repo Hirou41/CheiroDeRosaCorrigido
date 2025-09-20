@@ -13,7 +13,7 @@ const produtos = [
     nome: "Bolo de Chocolate Decorado",
     descricao: "recheio de brigadeiro ",
     imagem: "../Imagens/Imagens/Bolos/Bolo-chocolate-lado.jpeg",
-    imagemExtra: "../LojaAtulizado/Imagens/Bolos/Boloco-chocolate-vertical.jpeg",
+    imagemExtra: "../Imagens/Bolos/Boloco-chocolate-vertical.jpeg",
     categoria: "Bolos"
   },
   {
@@ -195,4 +195,5 @@ document.getElementById("filtro-categoria").addEventListener("change", e => {
 document.getElementById("busca-produto").addEventListener("input", e => {
   renderizarProdutos(document.getElementById("filtro-categoria").value, e.target.value);
 });
+
 
