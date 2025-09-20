@@ -1,0 +1,355 @@
+/* 🌸 Paleta de cores personalizada */
+:root {
+  --rosa-escuro: #b30059;
+  --rosa-claro: #ffd1dc;
+  --creme: #ffe5be;
+  --marrom-doce: #5a3e36;
+  --branco: #ffffff;
+  --destaque: #ff9f68;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--creme);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: var(--marrom-doce);
+}
+
+/* 🌸 Cabeçalho / Menu */
+header {
+  background-color: var(--rosa-escuro);
+  padding: 15px 30px;
+}
+
+.cabecalho__menu {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.cabecalho__menu__links {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--branco);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cabecalho__menu__links:hover {
+  color: var(--rosa-claro);
+}
+
+/* 🍬 Produtos */
+.brigadeiro__trad,
+.brigadeiro__gour {
+  padding: 4%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.brigadeiro__tradicional,
+.brigadeiro__gourmet {
+  background-color: var(--rosa-escuro);
+  border: none;
+  padding: 20px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--branco);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.brigadeiro__lista {
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--rosa-claro);
+}
+
+.brigadeiro__tradicional__imagem,
+.brigadeiro__gourmet__imagem {
+  border: 3px solid var(--destaque);
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* 📋 Apresentação / Informações */
+.apresentacao {
+  background-color: var(--branco);
+  border-left: 6px solid var(--rosa-escuro);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 40px auto;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.apresentacao__titulo {
+  font-size: 2.5rem;
+  color: var(--rosa-escuro);
+  margin-bottom: 15px;
+}
+
+.apresentacao__texto {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: var(--marrom-doce);
+}
+
+.apresentacao__aviso {
+  color: red;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* 📱 Botão WhatsApp */
+.botao-whatsapp {
+  display: inline-block;
+  background-color: #25D366;
+  color: var(--branco);
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.botao-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+/* 🌸 Rodapé */
+.rodape {
+  background-color: var(--rosa-escuro);
+  color: var(--branco);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.rodape a {
+  color: var(--rosa-claro);
+  font-weight: 500;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.rodape a:hover {
+  color: var(--destaque);
+}
+
+/* ==========================
+   Estilo da seção de Bolos
+   ========================== */
+#produtos {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+#produtos h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#produtos p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #444;
+}
+
+.brigadeiro__gourmet {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.brigadeiro__gourmet:hover {
+  transform: translateY(-5px);
+}
+
+.brigadeiro__gourmet__imagem {
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.brigadeiro__gourmet h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.brigadeiro__lista {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ==========================
+   Estilo da seção Brigadeiros
+   ========================== */
+main {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+main h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+main h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+}
+
+main ul li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+/* Card com múltiplas imagens */
+.bolo-multiview {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaço entre as imagens */
+}
+
+.bolo-multiview img {
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Espaçamento entre imagens e textos */
+main .row {
+  margin-bottom: 60px;
+}
+
+/* ==========================
+   🎨 Novo estilo dos cards
+   ========================== */
+.card.brigadeiro__gourmet {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card.brigadeiro__gourmet:hover {
+  transform: translateY(-5px);
+}
+
+.card-body h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* 📱 Responsividade */
+@media (max-width: 768px) {
+  .cabecalho__menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brigadeiro__trad,
+  .brigadeiro__gour {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .apresentacao {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .apresentacao__titulo {
+    font-size: 1.8rem;
+  }
+}
+/* ==========================
+   🎀 Estilo dos cards de brigadeiros
+   ========================== */
+.brigadeiro-img {
+  width: 150px;            /* largura do card */
+  height: 150px;           /* altura do card */
+  object-fit: cover;       /* cobre o espaço mantendo proporção */
+  border-radius: 50%;      /* imagem redonda */
+  border: 3px solid var(--destaque);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin: 0 auto 15px;     /* centraliza e separa do texto */
+  display: block;
+}
+
+.brigadeiro__trad .card,
+.brigadeiro__gourmet .card {
+  background-color: var(--rosa-escuro);
+  color: var(--branco);
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brigadeiro__trad .card:hover,
+.brigadeiro__gourmet .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.brigadeiro__trad .card h5,
+.brigadeiro__gourmet .card h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.brigadeiro__trad .card p,
+.brigadeiro__gourmet .card p {
+  font-size: 0.95rem;
+  color: var(--branco);
+}
+
+/* Grid responsivo para brigadeiros */
+.brigadeiro__trad .row,
+.brigadeiro__gourmet .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.brigadeiro__trad .col-md-3,
+.brigadeiro__gourmet .col-md-3 {
+  flex: 1 1 180px;
+  max-width: 220px;
+}
