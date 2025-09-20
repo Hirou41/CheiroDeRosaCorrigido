@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CheiroDeRosa</title>
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Garante que o footer fique na parte inferior */
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1; /* ocupa o espaço disponível */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho com menu responsivo -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">CheiroDeRosa</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#informacoes">Informações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="sobre container my-5">
+    <h1 class="text-center mb-4">Sobre Nós</h1>
+    <section class="bg-light p-4 rounded shadow-sm">
+      <p>
+        A <strong>CheiroDeRosa</strong> nasceu da paixão por confeitaria artesanal, 
+        trazendo doces feitos com carinho, dedicação e ingredientes de qualidade. 
+        Cada brigadeiro, bolo ou sobremesa é preparado com atenção aos detalhes, 
+        garantindo não só sabor, mas também uma experiência especial em cada mordida.
+      </p>
+      <p>
+        Nossa missão é transformar momentos simples em memórias inesquecíveis. 
+        Seja para festas, presentes ou para adoçar o dia, nossos produtos 
+        carregam um toque único que reflete amor e profissionalismo.
+      </p>
+      <p>
+        <em>“Mais que doces, criamos lembranças.”</em>
+      </p>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer id="contato" class="bg-dark text-white text-center p-4">
+    <p><a class="text-white text-decoration-none" target="_blank" href="https://www.google.com/maps/place/R.+Baltazar+Rabelo,+44A">📍 Rua Baltazar Rabelo, 44A - São Paulo/SP</a></p>
+    <p><a class="text-white text-decoration-none" target="_blank" href="https://www.instagram.com/atelie.cheiro.de.rosas/">📸 @vanessasantos</a></p>
+    <p><a class="text-white text-decoration-none" target="_blank" href="https://wa.me/5511989845357">📞 WhatsApp: (11) 98984-5357</a></p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
