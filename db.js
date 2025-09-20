@@ -12,7 +12,7 @@ const produtos = [
     id: 2,
     nome: "Bolo de Chocolate Decorado",
     descricao: "recheio de brigadeiro ",
-    imagem: "./CheiroDeRosaCorrigido/Imagens/Bolos/Bolo-chocolate-lado.jpeg",
+    imagem: "../Imagens/Imagens/Bolos/Bolo-chocolate-lado.jpeg",
     imagemExtra: "../LojaAtulizado/Imagens/Bolos/Boloco-chocolate-vertical.jpeg",
     categoria: "Bolos"
   },
@@ -20,14 +20,14 @@ const produtos = [
     id: 3,
     nome: "Bolo no Pote",
     descricao: "porção individual para aniversário e lembrancinha, recheios de brigadeiro branco ",
-    imagem: "../CheiroDeRosaCorrigido/Bolos/Bolo-pote-quadrado.jpeg",
+    imagem: "../Imagens/Bolos/Bolo-pote-quadrado.jpeg",
     categoria: "Bolos"
   },
   {
     id: 4,
     nome: "Bolo Rústico com Flores",
     descricao: "rústico com flores recheio de brigadeiro de maracujá ",
-    imagem: "../LojaAtulizado/Bolos/Bolo-pote-redondo.jpeg",
+    imagem: "../Imagens/Bolos/Bolo-pote-redondo.jpeg",
     categoria: "Bolos"
   },
   {
@@ -195,4 +195,5 @@ document.getElementById("filtro-categoria").addEventListener("change", e => {
 document.getElementById("busca-produto").addEventListener("input", e => {
   renderizarProdutos(document.getElementById("filtro-categoria").value, e.target.value);
 });
+
 
