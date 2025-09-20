@@ -5,7 +5,7 @@ const produtos = [
     id: 1,
     nome: "Bolo de Chocolate com Morangos",
     descricao: "morango recheio de brigadeiro e prestígio ",
-    imagem: "
+    imagem: "../LojaAtulizado/Imagens/Bolos/Boloco-chocolate-vertical.jpeg",
     categoria: "Bolos"
   },
   {
